@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://djdjqggaqdjwy"]
+[gd_scene load_steps=21 format=4 uid="uid://djdjqggaqdjwy"]
 
 [ext_resource type="Script" path="res://karakter_main_menu.gd" id="1_cb6uq"]
 [ext_resource type="Texture2D" uid="uid://dbf68tg36x1x3" path="res://karakter/karakter_Ch18_1001_Diffuse.png" id="2_mfad0"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://ch10oo237xwjp" path="res://buton.png" id="5_gksqm"]
 [ext_resource type="Texture2D" uid="uid://dwmxhde4v3dv1" path="res://button2.png" id="6_a7ukb"]
 [ext_resource type="Script" path="res://start_button.gd" id="7_jqswq"]
+[ext_resource type="Texture2D" uid="uid://8qow3cl5icks" path="res://icon/exitef1.png" id="8_cwlsu"]
+[ext_resource type="Texture2D" uid="uid://c3ne0k7tpuyc1" path="res://icon/exitef2.png" id="9_j05bm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b0dsc"]
 resource_name = "Ch18_Body"
@@ -3539,11 +3541,20 @@ current = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(1.35525e-20, 899)
-scale = Vector2(1.67329, 1.44531)
+position = Vector2(1.35525e-20, 957)
+scale = Vector2(1.14869, 0.992185)
 texture_normal = ExtResource("5_gksqm")
 texture_pressed = ExtResource("6_a7ukb")
 script = ExtResource("7_jqswq")
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 1818.0
+offset_top = 20.0
+offset_right = 2068.0
+offset_bottom = 270.0
+scale = Vector2(0.315, 0.3)
+texture_normal = ExtResource("9_j05bm")
+texture_hover = ExtResource("8_cwlsu")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.98396, 4.05191)
@@ -3553,3 +3564,4 @@ texture = ExtResource("4_aw685")
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1.56659, -3.77205)
 
 [connection signal="pressed" from="CanvasLayer/TouchScreenButton" to="CanvasLayer/TouchScreenButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="karakter" method="_on_texture_button_pressed"]
