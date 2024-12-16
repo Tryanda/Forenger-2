@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bophelsq2yxbt"]
+
+[ext_resource type="Texture2D" uid="uid://cnc0ydbo1a07p" path="res://textures/Mapsssssss/forest_5.png" id="1_1dkw0"]
+
+[resource]
+resource_name = "Wood_tree.001"
+cull_mode = 2
+albedo_color = Color(0.487814, 0.487814, 0.487814, 1)
+albedo_texture = ExtResource("1_1dkw0")

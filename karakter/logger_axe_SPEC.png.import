@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dfy745v1xw1gm"
+path="res://.godot/imported/logger_axe_SPEC.png-c33ded241a3636062bf4d2b1b4d2a755.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={
+"md5": "cf6cb4755552fcdd41b53f8f90b9579b"
+}
+
+[deps]
+
+source_file="res://karakter/logger_axe_SPEC.png"
+dest_files=["res://.godot/imported/logger_axe_SPEC.png-c33ded241a3636062bf4d2b1b4d2a755.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
