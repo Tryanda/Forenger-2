@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://buj3tdaf3g01v"
+path="res://.godot/imported/cutting.mp3-f4d0776b515b121f13f151cc29299dfd.mp3str"
+
+[deps]
+
+source_file="res://music/audiot effect/cutting.mp3"
+dest_files=["res://.godot/imported/cutting.mp3-f4d0776b515b121f13f151cc29299dfd.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

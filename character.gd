@@ -9,6 +9,8 @@ var sensitivity = 0.5
 @onready var head = $Head
 @onready var body = $Armature
 @onready var anime_player = $AnimationPlayer
+@onready var walksfx = $walksfx
+@onready var runsfx = $runsfx
 
 @export var joystick: VirtualJoystick
 
@@ -48,16 +50,22 @@ func _physics_process(delta: float) -> void:
 			velocity.z = direction.z * RUN_SPEED
 			if anime_player.current_animation != "run":
 				anime_player.play("run")
+				runsfx.play()
+				walksfx.stop()
 		else:
 			velocity.x = direction.x * SPEED
 			velocity.z = direction.z * SPEED
 			if anime_player.current_animation != "walk":
 				anime_player.play("walk")
+				walksfx.play()
+				runsfx.stop()
 	else:
 		# Jika tidak bergerak, set animasi idle
 		if is_on_floor() and velocity.length() == 0:
 			if anime_player.current_animation != "idle":
 				anime_player.play("idle")
+				walksfx.stop()
+				runsfx.stop()
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
