@@ -133,8 +133,8 @@ transform = Transform3D(1, 0, 0, 0, 0.999433, 0.033661, 0, -0.033661, 0.999433, 
 
 [node name="walksfx" type="AudioStreamPlayer3D" parent="." index="4"]
 stream = ExtResource("3_ex7mu")
-volume_db = 15.0
+volume_db = -9.382
 
 [node name="runsfx" type="AudioStreamPlayer3D" parent="." index="5"]
 stream = ExtResource("4_rr2mn")
-volume_db = 15.0
+volume_db = -9.382
