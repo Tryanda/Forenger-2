@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://ikd30ny0yj4i"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_7u5mq"]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7u5mq")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 751.0
+offset_top = 370.0
+offset_right = 1235.0
+offset_bottom = 522.0
+theme_override_font_sizes/font_size = 50
+text = "GAME OVER !!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 764.0
+offset_top = 533.0
+offset_right = 1220.0
+offset_bottom = 676.0
+theme_override_font_sizes/font_size = 50
+action_mode = 0
+text = "Back to Menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

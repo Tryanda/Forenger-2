@@ -9,19 +9,19 @@
 script = ExtResource("1_nj81x")
 
 [node name="run" type="TouchScreenButton" parent="."]
-position = Vector2(147, 167)
+position = Vector2(222, 209)
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("1_ci2wd")
 action = "run"
 
 [node name="jump" type="TouchScreenButton" parent="."]
-position = Vector2(1493, 813)
+position = Vector2(1576, 753)
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("2_h7gel")
 action = "jump"
 
 [node name="catch" type="TouchScreenButton" parent="."]
-position = Vector2(1596, 667)
+position = Vector2(1679, 652)
 scale = Vector2(0.064227, 0.064227)
 texture_normal = ExtResource("4_bj5y6")
 
