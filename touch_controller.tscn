@@ -24,6 +24,7 @@ action = "jump"
 position = Vector2(1679, 652)
 scale = Vector2(0.064227, 0.064227)
 texture_normal = ExtResource("4_bj5y6")
+action = "catch"
 
 [connection signal="pressed" from="run" to="." method="_on_run_pressed"]
 [connection signal="released" from="run" to="." method="_on_run_released"]

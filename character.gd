@@ -1,16 +1,21 @@
 extends CharacterBody3D
 
+class_name Player
+
 const SPEED = 1.0
 const RUN_SPEED = 2.5
 const JUMP_VELOCITY = 3.5
 
 var sensitivity = 0.5
 
+var position_player = null
+
 @onready var head = $Head
 @onready var body = $Armature
 @onready var anime_player = $AnimationPlayer
 @onready var walksfx = $walksfx
 @onready var runsfx = $runsfx
+
 
 @export var joystick: VirtualJoystick
 
@@ -23,6 +28,8 @@ func _input(event: InputEvent) -> void:
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-70), deg_to_rad(85))
 
 func _physics_process(delta: float) -> void:
+	position_player = self.global_position
+	print("posisi karakter : " , global_position)
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
