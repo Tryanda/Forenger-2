@@ -30,8 +30,7 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("catch"):
 			is_catching_player = true
 			if is_catching_player:
-				print("Kamu Tertangkapp!")
-				get_tree().quit()
+				get_tree().change_scene_to_file("res://win.tscn")
 			
 	elif global_position.distance_to(player.global_position) < 3:
 		print("LARIIII!")

@@ -46,5 +46,4 @@ func _on_CountdownTimer_timeout() -> void:
 	game_over()
 
 func game_over():
-	print("Game Over! Waktu habis.")
 	get_tree().change_scene_to_file("res://GameOver.tscn")

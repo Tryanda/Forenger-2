@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://rfav1f2346jo"]
+
+[ext_resource type="Script" path="res://catch.gd" id="1_0tfhs"]
+
+[node name="Catch" type="Node2D"]
+script = ExtResource("1_0tfhs")
+
+[node name="message" type="Label" parent="."]
+offset_left = 437.0
+offset_top = 388.0
+offset_right = 1528.0
+offset_bottom = 529.0
+theme_override_font_sizes/font_size = 50
+text = "SELAMAT
+ANDA TELAH BERHASIL MENYELESAIKAN MISI"
+horizontal_alignment = 1
+
+[node name="Continue" type="Button" parent="."]
+offset_left = 870.0
+offset_top = 564.0
+offset_right = 1231.0
+offset_bottom = 686.0
+scale = Vector2(0.73, 0.73)
+theme_override_font_sizes/font_size = 50
+text = "Continue"
+
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
