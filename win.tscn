@@ -1,27 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://rfav1f2346jo"]
+[gd_scene load_steps=5 format=3 uid="uid://rfav1f2346jo"]
 
 [ext_resource type="Script" path="res://catch.gd" id="1_0tfhs"]
+[ext_resource type="Texture2D" uid="uid://dvxufyewif7j4" path="res://textures/winscene/gamedev.png" id="2_yjpri"]
+[ext_resource type="Texture2D" uid="uid://ct4jtp76jrsbe" path="res://textures/winscene/contnuebtn.png" id="3_tdpg5"]
+[ext_resource type="Texture2D" uid="uid://nu811jlyg4sq" path="res://textures/winscene/cntnuebtn.png" id="4_va6p2"]
 
 [node name="Catch" type="Node2D"]
 script = ExtResource("1_0tfhs")
 
-[node name="message" type="Label" parent="."]
-offset_left = 433.27
-offset_top = 388.0
-offset_right = 1524.27
-offset_bottom = 529.0
-theme_override_font_sizes/font_size = 50
-text = "SELAMAT
-ANDA TELAH BERHASIL MENYELESAIKAN MISI"
-horizontal_alignment = 1
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1.315, 1.315)
+texture = ExtResource("2_yjpri")
 
-[node name="Continue" type="Button" parent="."]
-offset_left = 845.825
-offset_top = 564.0
-offset_right = 1206.82
-offset_bottom = 686.0
-scale = Vector2(0.73, 0.73)
-theme_override_font_sizes/font_size = 50
-text = "Continue"
+[node name="TextureButton" type="TextureButton" parent="."]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 820.0
+offset_top = 746.0
+offset_right = 1859.0
+offset_bottom = 1096.0
+grow_vertical = 2
+scale = Vector2(0.28, 0.28)
+texture_normal = ExtResource("3_tdpg5")
+texture_pressed = ExtResource("4_va6p2")
 
-[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

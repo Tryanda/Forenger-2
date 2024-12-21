@@ -1,31 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://ikd30ny0yj4i"]
+[gd_scene load_steps=5 format=3 uid="uid://ikd30ny0yj4i"]
 
 [ext_resource type="Script" path="res://game_over.gd" id="1_7u5mq"]
+[ext_resource type="Texture2D" uid="uid://vnqdus5ot85g" path="res://textures/gameover/bggameover.png" id="2_giing"]
+[ext_resource type="Texture2D" uid="uid://bo30ux34hdt5m" path="res://textures/gameover/cblgibtn.png" id="3_nnl1l"]
+[ext_resource type="Texture2D" uid="uid://cuwphxs3gbjfs" path="res://textures/gameover/cobalagi.png" id="4_i2o03"]
 
 [node name="Node2D" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_7u5mq")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 751.0
-offset_top = 370.0
-offset_right = 1235.0
-offset_bottom = 522.0
-theme_override_font_sizes/font_size = 50
-text = "GAME OVER !!!"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1.315, 1.315)
+texture = ExtResource("2_giing")
 
-[node name="Button" type="Button" parent="."]
+[node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 764.0
-offset_top = 533.0
-offset_right = 1220.0
-offset_bottom = 676.0
-theme_override_font_sizes/font_size = 50
-action_mode = 0
-text = "Back to Menu"
+offset_left = 820.0
+offset_top = 746.0
+offset_right = 1860.0
+offset_bottom = 1096.0
+scale = Vector2(0.28, 0.28)
+texture_normal = ExtResource("3_nnl1l")
+texture_pressed = ExtResource("4_i2o03")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
