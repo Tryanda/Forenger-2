@@ -19,10 +19,10 @@ expand = true
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Button" type="Button" parent="."]
-offset_left = 711.0
-offset_top = -465.0
-offset_right = 855.0
-offset_bottom = -405.0
+offset_left = 804.0
+offset_top = -509.0
+offset_right = 914.0
+offset_bottom = -464.0
 theme_override_fonts/font = ExtResource("3_v042x")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 30
 text = "Skip..."

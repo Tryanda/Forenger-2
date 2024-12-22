@@ -8,7 +8,7 @@ class_name Logger
 @onready var player = $"../../karakter"
 # Logika catching
 var is_catching_player = false
-const SPEED = 2.0
+const SPEED = 2.3
 var destination = Vector3.ZERO
 var gravity = 0.3
 
@@ -26,7 +26,7 @@ func _physics_process(delta):
 	print("posisi karakter : ", player.global_position)
 	print("posisi logger : ", self.global_position)
 	
-	if global_position.distance_to(player.global_position) < 1.5:
+	if global_position.distance_to(player.global_position) < 1.3:
 		if Input.is_action_just_pressed("catch"):
 			is_catching_player = true
 			if is_catching_player:
